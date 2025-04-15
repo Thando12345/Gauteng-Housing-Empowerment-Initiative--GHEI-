@@ -5,9 +5,9 @@ import {
   UserGroupIcon,
   BookOpenIcon,
   DocumentTextIcon,
-  ChatAlt2Icon,
+  ChatBubbleLeftRightIcon,
   BellIcon
-} from '@heroicons/react/outline';
+} from '@heroicons/react/24/outline';
 
 function AdminDashboard() {
   const { user } = useAuth();
@@ -93,7 +93,7 @@ function AdminDashboard() {
           <StatCard
             title="Forum Posts"
             value={stats.totalForumPosts}
-            icon={ChatAlt2Icon}
+            icon={ChatBubbleLeftRightIcon}
             bgColor="bg-red-500"
           />
         </div>
@@ -134,3 +134,4 @@ function AdminDashboard() {
 }
 
 export default AdminDashboard;
+

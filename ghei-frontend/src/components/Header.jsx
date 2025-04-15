@@ -1,21 +1,15 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import {
-  HomeIcon,
-  BuildingOfficeIcon,
-  DocumentTextIcon,
-  PhoneIcon,
-  UserIcon,
-  LogoutIcon
-} from '@heroicons/react/outline';
 import SearchBar from './Search/SearchBar';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { 
   HomeIcon, 
   BuildingOfficeIcon, 
   DocumentTextIcon, 
-  PhoneIcon 
+  PhoneIcon,
+  UserIcon,
+  ArrowRightOnRectangleIcon
 } from '@heroicons/react/24/solid';
 
 function Header() {
@@ -67,7 +61,7 @@ function Header() {
                     onClick={logout}
                     className="flex items-center text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    <LogoutIcon className="h-5 w-5 mr-1" />
+                    <ArrowRightOnRectangleIcon className="h-5 w-5 mr-1" />
                     Logout
                   </button>
                 </>
@@ -129,3 +123,5 @@ function Header() {
 }
 
 export default Header;
+
+

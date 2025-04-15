@@ -1,5 +1,5 @@
 import React from 'react';
-import { PhoneIcon, MailIcon, LocationMarkerIcon } from '@heroicons/react/outline';
+import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/outline';
 
 function Contact() {
   return (
@@ -21,14 +21,14 @@ function Contact() {
           </div>
 
           <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
-            <MailIcon className="h-8 w-8 text-primary mb-4" />
+            <EnvelopeIcon className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-medium text-gray-900">Email</h3>
             <p className="mt-2 text-gray-600">We'll respond within 24 hours</p>
             <p className="mt-2 text-primary font-medium">info@ghei.org.za</p>
           </div>
 
           <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
-            <LocationMarkerIcon className="h-8 w-8 text-primary mb-4" />
+            <MapPinIcon className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-medium text-gray-900">Office</h3>
             <p className="mt-2 text-gray-600">123 Main Street</p>
             <p className="mt-2 text-gray-600">Johannesburg, Gauteng</p>
@@ -85,3 +85,5 @@ function Contact() {
 }
 
 export default Contact;
+
+
